@@ -6,7 +6,8 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello Kev You So Pretty!");
+            Console.WriteLine("Hello World!");
+            Console.Beep();
         }
     }
 }
