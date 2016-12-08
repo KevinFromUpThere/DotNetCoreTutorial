@@ -1,55 +1,83 @@
 ﻿/*site.css*/
 
-body{font-family: sans-serif;
-     font-size: 14px;
-     margin:0;
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
 }
 
-label{font-weight:bold;
-      display:block;
+label {
+    font-weight: bold;
+    display: block;
 }
 
-input[type=text], input[type=password],textarea{width:150px;}
+input[type=text], input[type=password], textarea {
+    width: 150px;
+}
 
-#main {background-color:#e2c09a}
+#main {
+    background-color: #e2c09a;
+}
 
-#footer{background-color:#aa9f9f;
-        color:#000000;
-        position:fixed;
-        bottom:0;
-        width:100%;
-
+#footer {
+    background-color: #aa9f9f;
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 
-.headshot{
+.headshot {
     max-width: 100px;
 }
 
-.menu{
+.menu {
     font-size: 12px;
-
 }
 
-.menu li {
-    list-style-type: none;
-}
+    .menu li {
+        list-style-type: none;
+    }
 
-.menu li.active{font-weight: bold;}
+        .menu li.active {
+            font-weight: bold;
+        }
 
-#sidebar{
-
+#sidebar {
     background: #808080;
-    color:#ff0000;
-    position:fixed;
-    height:100%;
+    color: #ff0000;
+    position: fixed;
+    height: 100%;
     width: 250px;
-    overflow:hidden;
-    left:0;
-
-
+    overflow: hidden;
+    left: 0;
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
+    transition: left ease .25s;
 }
 
-#wrapper{margin-left:250px;
+    #sidebar.hide-sidebar {
+        left: -250px;
+        -moz-transition: left ease .25s;
+        -o-transition: left ease .25s;
+        -webkit-transition: left ease .25s;
+        transition: left ease .25s;
+    }
 
+#wrapper.hide-sidebar {
+    margin-left: 0;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s;
+}
+
+#wrapper {
+    margin-left: 250px;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s;
 }

@@ -1,15 +1,16 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html>
 <head>
-    <title>The World</title>
-    <meta charset="utf-8"/>
+    <title>The World -  @ViewBag.Title</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="css/site.css"
 </head>
 
 <body>
-
     <div id="sidebar">
-        <img src="img/kev barton street.jpg" alt="Picture of Kev lookin sweet" class="headshot"/>
+        <img src="img/kev barton street.jpg" alt="Picture of Kev lookin sweet" class="headshot" />
         <span id="username">Kev Archie</span>
         <ul class="menu">
             <li class="active"><a href="#">Home</a></li>
@@ -17,12 +18,13 @@
             <li><a href="#">Contact</a></li>
 
         </ul>
-    </div>    
+    </div>  
     <div id="wrapper">
         <div id="main">
             <div>
-                    <button id="sidebarToggle">Hide Sidebar</button>
+                <button id="sidebarToggle">Hide Sidebar</button>
             </div>
+            @RenderBody() 
             <h2>The World</h2>
             <p> Something fun here</p>
             <form>
@@ -38,15 +40,15 @@
         </div>
     </div>
 
-        </form>
+    </form>
 
-    
+
 
     <div id="footer">
         &copy; Kev's amazing website
     </div>
     <script type="text/javascript" src="lib/jquery/dist/jquery.slim.min.js"></script>
-    <script type= "text/javascript" src="js/site.js">
+    <script type="text/javascript" src="js/site.js">
     </script>
 </body>
 
